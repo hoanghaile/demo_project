@@ -1,0 +1,39 @@
+.pd-card {
+  padding: 1rem;
+}
+.box-card {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin-bottom: 1.5rem;
+  word-wrap: break-word;
+  border: 1px solid;
+  border-radius: 0.25rem;
+}
+.box-primary {
+  background: #1f1498 !important;
+  background: linear-gradient(45deg, #321fdb 0%, #1f1498 100%) !important;
+  border-color: #1f1498 !important;
+}
+.box-danger {
+  background: #d93737 !important;
+  background: linear-gradient(45deg, #e55353 0%, #d93737 100%) !important;
+  border-color: #d93737 !important;
+}
+.box-success {
+  background: #2eb85c !important;
+  background: linear-gradient(45deg, #4ef73e 0%, #2eb85c 100%) !important;
+  border-color: #2eb85c !important;
+}
+.text-white {
+  h3,
+  h6 {
+    font-weight: 600;
+    color: #fff !important;
+  }
+}
+.box-icon {
+  font-size: 65px;
+}

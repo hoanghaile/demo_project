@@ -1,0 +1,133 @@
+POST  http://localhost:8000/auth/register
+Content-Type: application/json
+
+{   "fullname":"vutritam",
+    "username": "tam",
+    "password": "1234567",
+    "image":"",
+    "phone":"0933511342",
+    "email":"hai",
+    "gender":"Nam",
+    "address":"tây ninh",
+    "passport":"1122111222",
+    "nationality":"Việt Nam",
+    "nation": "Kinh",
+    "position":"Admin",
+    "work": true
+}
+
+###
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+
+
+{
+    "username": "Hoanghaile",
+    "password": "123456"
+}
+
+
+###
+POST http://localhost:8000/auth/verify
+Content-Type: application/json
+
+
+{
+    "username": "aaaaaa",
+    "password": "123456"
+}
+
+
+
+###
+POST http://localhost:8000/users/add
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTU5NzM2ZTVmYTZjYmZmNzk0ODUwNjIiLCJpYXQiOjE2MzM2MTUzMDB9.Ddo9wiXn0deWB_RJWyriFQzWWEP67aBtPJyJb2x1NP0
+
+{   "fullname":"Lê Hoàng Hải",
+    "username": "LeHoangHai",
+    "password": "123456",
+    "image":"React",
+    "phone":"0933511342",
+    "email":"sdfds",
+    "gender":"Nam",
+    "address":"Hóc Môn",
+    "passport":"1111",
+    "nationality":"Việt Nam",
+    "nation": "Kinh",
+    "position":"Admin",
+    "work": true
+}
+###
+GET http://localhost:8000/auth/admin/all
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTdlM2JkMDEwNzA4NTc1NWYwN2YwY2EiLCJpYXQiOjE2MzU2NjI4MDB9.su_i3tChGvmwo3vlegqFfX-bsBH0laZGmYPlQaG_le4
+
+
+###
+GET http://localhost:8000/auth/admin/61827c3d255c293429803ca1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTdlM2JkMDEwNzA4NTc1NWYwN2YwY2EiLCJpYXQiOjE2MzU2NjI4MDB9.su_i3tChGvmwo3vlegqFfX-bsBH0laZGmYPlQaG_le4
+
+
+###
+PUT HTTP://localhost:8000/users/update/615efe82a1f723e030ff3515
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTU5NzM2ZTVmYTZjYmZmNzk0ODUwNjIiLCJpYXQiOjE2MzM2OTY4MDZ9.4INZmsbQHTy1fix6uyUafTPBY4w6O342Spy9F9MRcI4
+
+{
+    "username": "Angular",
+    "password": "Angular",
+    "image":"Angular",
+    "phone":"123456",
+    "email":"Angular.js",
+    "gender":"Angular",
+    "address":" Angular",
+    "passport":"1122111222",
+    "nationality":"Việt Nam",
+    "nation": "Kinh",
+    "position":"Admin",
+    "work": true
+}
+
+###
+DELETE  http://localhost:8000/users/delete/61656c5e6a7b7ac1765f6fa4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTU5NzM2ZTVmYTZjYmZmNzk0ODUwNjIiLCJpYXQiOjE2MzM2OTY4MDZ9.4INZmsbQHTy1fix6uyUafTPBY4w6O342Spy9F9MRcI4
+
+###
+GET http://localhost:8000/category/all
+
+###
+POST http://localhost:8000/category/add
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTYwM2ZhYjRlZjI0MzBkZjc2ZDY4ZDMiLCJpYXQiOjE2MzQwMzA0MTF9.2YdNfweYDrf1i9YeCk0fWnZPqriE7NxvfWQ_26M4cQg
+Content-Type: application/json
+
+{
+    "name": "Khẩu trang"
+}
+
+
+###
+PUT http://localhost:8000/category/update/616554e861b845a8041967b2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTYwM2ZhYjRlZjI0MzBkZjc2ZDY4ZDMiLCJpYXQiOjE2MzQwMzYwMjJ9.ReHqd8GUBAF62CQhcWVTZbB1oCCG6ODRMZwctFLiMik
+Content-Type: application/json
+
+{
+    "name":"Rau củ quả"
+}
+
+###
+DELETE  http://localhost:8000/category/delete/61656c0f6a7b7ac1765f6f9e
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTYwM2ZhYjRlZjI0MzBkZjc2ZDY4ZDMiLCJpYXQiOjE2MzQwMzY3MDZ9.VNrdb-k2bA0W2sZXanwQBs_ITuoumNTcUC2H14XmCWI
+
+
+
+
+###
+POST http://localhost:8000/email/send-mail
+Content-Type: application/json
+
+
+{
+    "email":"smtp.hailhps11105@gmail.com"
+}
+
+

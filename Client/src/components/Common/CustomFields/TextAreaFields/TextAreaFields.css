@@ -1,0 +1,21 @@
+.text-area {
+  appearance: none;
+  font-size: 1rem;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  resize: vertical;
+  box-sizing: border-box;
+  padding: 0.65rem 0.5rem;
+}
+
+.label-field {
+  display: flex;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+textarea {
+  width: 100%;
+}
+
+/*# sourceMappingURL=TextAreaFields.css.map */

@@ -1,0 +1,20 @@
+.box-add {
+  display: inline-block;
+  height: 40px;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 50px;
+  .icon-add {
+    position: relative;
+    margin-right: 5px;
+    line-height: 40px;
+    margin-bottom: 3px;
+  }
+}
+.button-add {
+  border: none;
+  background-color: #fff;
+  color: rgb(0, 85, 169);
+  cursor: pointer;
+  font-size: 16px;
+}

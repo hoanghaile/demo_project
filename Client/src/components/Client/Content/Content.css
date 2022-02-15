@@ -1,0 +1,88 @@
+.content {
+  position: absolute;
+  left: calc(50% - 200px);
+  top: 200px;
+  max-width: 500px;
+  min-width: 150px;
+}
+
+.input-content {
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 35px 10px 10px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.search-Icons {
+  position: absolute;
+  top: 10px;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.box-item {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.box-item-info {
+  display: inline-block;
+  cursor: pointer;
+  height: 40px;
+  width: 120px;
+  color: white;
+  border-radius: 50px;
+}
+
+.box-item-1 {
+  line-height: 40px;
+  text-align: center;
+}
+
+.box-red {
+  background-color: #e44848;
+  opacity: 0.5;
+}
+
+.hover-box:hover {
+  opacity: 1;
+}
+
+.box-Orange {
+  background-color: #ffae42;
+  opacity: 0.5;
+}
+
+.box-green {
+  background-color: #5ccc5c;
+  opacity: 0.5;
+}
+
+.box-add-send {
+  margin-top: 200px;
+}
+
+.box-send {
+  display: inline-block;
+  cursor: pointer;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 50px;
+  color: #0055a9;
+}
+.box-send .icon-send {
+  position: relative;
+  margin-right: 5px;
+  line-height: 40px;
+  margin-bottom: 3px;
+}
+
+/*# sourceMappingURL=Content.css.map */

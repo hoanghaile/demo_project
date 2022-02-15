@@ -1,0 +1,19 @@
+.auth-input {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.input-field {
+  width: 100%;
+  height: 70px;
+}
+.input-field p {
+  color: red;
+}
+
+.label-field {
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=InputFields.css.map */

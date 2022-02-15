@@ -1,0 +1,91 @@
+.btn-dialog {
+  border: none;
+  background: #fafafa;
+}
+
+.div-dialog {
+  padding: 10px;
+}
+
+.information-content {
+  padding-left: 16px;
+  padding-right: 14px;
+  padding-bottom: 14px;
+}
+
+.information-box {
+  margin-bottom: 10px;
+}
+
+.infor-img {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+.infor-table {
+  width: 100%;
+  max-width: 500px;
+  border-spacing: 0 2px;
+}
+.infor-table .div-table-1 {
+  color: #3c4043;
+  font-size: 14px;
+}
+.infor-table .div-table-2 span {
+  font-size: 20px;
+  color: #202124;
+  font-weight: 500;
+}
+.infor-table .border-infor {
+  border-right: 1px solid #ebebeb;
+}
+.infor-table .border-infor-right {
+  padding-left: 10px;
+}
+
+.icon-world {
+  font-size: 25px;
+  color: aqua;
+  margin-right: 10px;
+}
+
+.border-top-table {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.mb-input {
+  margin-bottom: 10px;
+}
+
+.height-content {
+  height: 600px !important;
+  overflow: hidden;
+}
+
+.scrollbar {
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+
+.force-overflow {
+  min-height: 450px;
+}
+
+#style-scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+#style-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+#style-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #4285f4;
+}
+
+/*# sourceMappingURL=Information.css.map */

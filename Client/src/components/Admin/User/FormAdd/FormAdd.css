@@ -1,0 +1,62 @@
+.card-box-img {
+  margin: auto;
+  max-width: 200px;
+}
+
+.errorMsg {
+  color: red;
+  font-size: 22px;
+  margin: 5px 0;
+}
+
+.imgPreview {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.imgPreview input[type=file] {
+  display: none;
+}
+
+.imgPreview .customFileUpload {
+  font-size: 22px;
+  font-family: 500;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.upload-img-button {
+  padding: 0 30px;
+  border-radius: 5px;
+  border: #5757ff solid;
+  background: #5757ff;
+  color: white;
+  margin-top: 10px;
+}
+
+.label-field {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.auth-button-footer {
+  text-align: right;
+}
+
+.pad-4 {
+  padding-right: 35px !important;
+}
+
+.pad-add {
+  height: 70px;
+}
+
+/*# sourceMappingURL=FormAdd.css.map */

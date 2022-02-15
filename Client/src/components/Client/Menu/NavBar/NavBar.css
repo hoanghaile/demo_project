@@ -1,0 +1,23 @@
+.navbar {
+  background-color: white;
+  padding-left: 2rem;
+}
+
+.logo {
+  height: 32px;
+  margin-left: 1rem;
+}
+
+section aside {
+  width: 270px;
+}
+
+.button-list {
+  background-color: white;
+}
+
+.list-icon {
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=NavBar.css.map */

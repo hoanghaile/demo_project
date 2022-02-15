@@ -1,0 +1,24 @@
+.ul-sidebar {
+  list-style: none;
+  padding: 0;
+}
+
+.li-sidebar {
+  list-style: none;
+  padding: 5px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.button-filter {
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 100px;
+  border-radius: 50px;
+  padding: 5px 15px;
+  border: 1px solid gray;
+}
+
+/*# sourceMappingURL=SideBar.css.map */

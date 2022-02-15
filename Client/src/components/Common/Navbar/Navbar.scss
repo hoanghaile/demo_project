@@ -1,0 +1,49 @@
+.navbar {
+  background-color: var(--bs-body-bg) !important ;
+}
+.button-user {
+  border: none;
+}
+.dropdown {
+  a {
+    text-decoration: none;
+    color: #25396f;
+  }
+}
+.nav-link {
+  display: block;
+  padding: 0.4rem;
+  border-radius: 50%;
+}
+.button-header {
+  background-color: var(--bs-body-bg) !important;
+  border: none;
+  color: #25396f;
+}
+.button-header:hover {
+  color: #25396f;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.dropdown-menu {
+  p {
+    align-items: center;
+  }
+}
+.avatar {
+  img {
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+    border-radius: 50px;
+  }
+}
+.user-menu {
+  align-items: center;
+}
+.sidebar-header {
+  padding: 2rem 2rem 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}

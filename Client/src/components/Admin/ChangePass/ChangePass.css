@@ -1,0 +1,19 @@
+.page-change h2 {
+  font-weight: 600;
+}
+.page-change p {
+  font-size: 19px;
+}
+
+.color-change {
+  margin: 1rem 0 1.5rem 0;
+}
+.color-change label {
+  color: blue;
+}
+
+.w-btn {
+  width: 100%;
+}
+
+/*# sourceMappingURL=ChangePass.css.map */

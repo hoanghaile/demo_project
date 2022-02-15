@@ -1,0 +1,25 @@
+.img-user {
+  text-align: center;
+}
+.img-user img {
+  width: 200px;
+  height: 200px;
+}
+
+.infor-user {
+  padding: 20px;
+}
+.infor-user h6 {
+  font-weight: 600;
+  padding: 10px 0 10px 0;
+}
+
+.detail-user {
+  padding: 20px;
+}
+.detail-user h6 {
+  padding: 10px 0 10px 0;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=DetailUser.css.map */
