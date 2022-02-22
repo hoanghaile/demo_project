@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ReactMapGL, { Source } from '@goongmaps/goong-map-react';
 
-const GOONG_MAPTILES_KEY = '2ZzuAlj3TCXbX2V4x8pD96R05cQjgKpjZ1sRslwE';
+const GOONG_MAPTILES_KEY = 'jjnLR19QiJQ5VRmRXGc2215kUXYf2tpUi3MIXPNz';
 
 const Map = () => {
     const [viewport, setViewport] = useState({
