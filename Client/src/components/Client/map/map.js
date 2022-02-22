@@ -7,8 +7,8 @@ const Map = () => {
     const [viewport, setViewport] = useState({
     width: 400,
     height: 400,
-    latitude: 16.000000,
-    longitude: 108.000000,
+    latitude: 14.716597953261696,
+    longitude: 108.29480072949772,
     zoom: 5
     });
     const mapRef = useRef(null);
@@ -17,10 +17,10 @@ const Map = () => {
         const feature = event?.features[0];
         const clusterId = feature?.properties?.cluster_id;
 
-        const mapboxSource = mapRef.current.getMap().getSource('earthquakes');
+        const mapBoxSource = mapRef.current.getMap().getSource('earthquakes');
         // console.log(mapRef.current, 6767);
 
-        mapboxSource.getClusterExpansionZoom(clusterId, (err, zoom) => {
+        mapBoxSource.getClusterExpansionZoom(clusterId, (err, zoom) => {
             if (err) {
                 return;
             }
@@ -55,8 +55,8 @@ const Map = () => {
             height="100%"
             mapStyle="https://tiles.goong.io/assets/goong_light_v2.json"
             goongApiAccessToken={GOONG_MAPTILES_KEY}
-                onViewportChange={setViewport}
-                onClick={onClick}
+            onViewportChange={setViewport}
+            onClick={onClick}
             ref={mapRef}
         >
             <Source

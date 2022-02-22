@@ -26,8 +26,8 @@ function App() {
             {/* <Redirect from="/admin" to="/login"/> */}
             <Route exact path='/' component={ClientPage} />
             <ProtectedRoute path='/admin' component={AdminPage}/>
-            <Route exact path='/login' render={props => <Auth {...props} authRoute='login'/>}/>
-            <Route exact path='/forget-password' component={ForgetPass} />
+            <Route path='/login' render={props => <Auth {...props} authRoute='login'/>}/>
+            <Route path='/forget-password' component={ForgetPass} />
             <AdminPage />
           </Switch>
         </Router>
