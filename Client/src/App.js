@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <AuthContextProvider>
-        <Router>
+        {/* <Router> */}
           <Switch>
             {/* <Redirect from="/admin" to="/login"/> */}
             <Route exact path='/' component={ClientPage} />
@@ -30,7 +30,7 @@ function App() {
             <Route path='/forget-password' component={ForgetPass} />
             <AdminPage />
           </Switch>
-        </Router>
+        {/* </Router> */}
       </AuthContextProvider>
     </>
   );

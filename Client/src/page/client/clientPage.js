@@ -1,4 +1,5 @@
 import React from 'react';
+import {withRouter} from 'react-router'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Client from '../../components/Client/Home';
 // import SideBar from '../../components/Client/Home';
@@ -10,11 +11,11 @@ const ClientPage = () => {
                 {/* <SideBar/> */}
                 {/* <div id="main"> */}
                     <Switch>
-                        <Route path="/" exact component={Client} />
+                        <Route path="/" component={Client} />
                     </Switch>
                 {/* </div> */}
             </div>
         </Router>
     );
 };
-export default ClientPage;
+export default withRouter(ClientPage);
