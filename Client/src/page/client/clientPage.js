@@ -6,16 +6,18 @@ import Client from '../../components/Client/Home';
 
 const ClientPage = () => {
     return (
-        <Router>
+        
             <div id="app">
                 {/* <SideBar/> */}
-                {/* <div id="main"> */}
+            {/* <div id="main"> */}
+                <Router>
                     <Switch>
-                        <Route path="/" component={Client} />
+                        <Route  path="/" component={Client} />
                     </Switch>
+                 </Router>
                 {/* </div> */}
             </div>
-        </Router>
+       
     );
 };
 export default withRouter(ClientPage);

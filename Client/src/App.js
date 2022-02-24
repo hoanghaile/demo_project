@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { BrowserRouter as Route, Switch, Router } from 'react-router-dom';
 import ClientPage from './page/client/clientPage';
 import AdminPage from './page/admin/AdminPage';
 
@@ -21,8 +21,7 @@ function App() {
   return (
     <>
       <AuthContextProvider>
-        {/* <Router> */}
-        <BrowserRouter>
+        <Router>
           <Switch>
             {/* <Redirect from="/admin" to="/login"/> */}
             <Route exact path='/' component={ClientPage} />
@@ -31,8 +30,7 @@ function App() {
             <Route path='/forget-password' component={ForgetPass} />
             <AdminPage />
           </Switch>
-          </BrowserRouter>
-        {/* </Router> */}
+        </Router>
       </AuthContextProvider>
     </>
   );
