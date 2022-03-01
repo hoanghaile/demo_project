@@ -130,4 +130,7 @@ Content-Type: application/json
     "email":"smtp.hailhps11105@gmail.com"
 }
 
+###
+GET http://localhost:8000/health-check
+
 
