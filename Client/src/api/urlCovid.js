@@ -1,2 +1,2 @@
-export const apiURL = process.env.NODE_env !== 'production' ? 'https://corona.lmao.ninja' : 'URL';
-    //"https://corona.lmao.ninja/v2/countries?fbclid=IwAR0cjDQx5onhmxgFX-xkNoHbYyWKTuKUUgmelOfHNYAeESo1PtbM1twUHlI"
+export const apiURL = process.env.NODE_ENV !== 'production' ? 'https://corona.lmao.ninja' : 'https://corona.lmao.ninja';
+    //"https://corona.lmao.ninja/v2/countries?fbclid=IwAR0cjDQx5onhmxgFX-xkNoHbYyWKTuKUUgmelOfHNYAeESo1PtbM1twUHlI"ser
