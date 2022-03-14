@@ -20,4 +20,10 @@ section aside {
   font-size: 25px;
 }
 
-/*# sourceMappingURL=NavBar.css.map */
+.logo-navBar {
+  width: 50px;
+  height: 50px;
+  margin: 5px 20px 5px 5px;
+}
+
+/*# sourceMappingURL=Navbar.css.map */

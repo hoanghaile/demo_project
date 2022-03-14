@@ -1,9 +1,10 @@
 import React from "react";
 
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route ,Redirect } from "react-router-dom";
 
 import ClientPage from "./page/client/clientPage";
 import AdminPage from "./page/admin/AdminPage";
+import Page404 from "./page/Page404/Page404";
 import "bootstrap/dist/js/bootstrap.js";
 
 import "./assets/css/App.css";
@@ -31,6 +32,8 @@ function App() {
           <ProtectedRoute path='/admin' component={AdminPage}/>
           <Route path='/login' render={props => <Auth {...props} authRoute='login' />}/>
           <Route path='/forget-password' component={ForgetPass} />
+          <Route path='/404' component={Page404} />
+          <Redirect to="/404"/>
           <AdminPage />
         </Switch>
       </BrowserRouter>

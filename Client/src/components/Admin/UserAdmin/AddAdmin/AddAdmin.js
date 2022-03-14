@@ -15,7 +15,7 @@ const AddUser = ({userLoad}) => {
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <FormAdd control={setLgShow} userLoad={ userLoad}/>
+                    <FormAdd control={setLgShow} userLoad={userLoad}/>
                 </Modal.Body>
             </Modal>
         </>

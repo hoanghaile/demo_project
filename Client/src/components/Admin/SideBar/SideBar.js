@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { BsChevronDown } from 'react-icons/bs';
 import { RiLogoutBoxRLine,RiDashboard3Line } from 'react-icons/ri';
 import { BsCardList, BsFolderSymlink } from 'react-icons/bs';
 import {MdClear} from 'react-icons/md'
 import {BiUserCircle} from 'react-icons/bi'
 import { useRouteMatch, Link, NavLink } from 'react-router-dom';
-// import { AuthContext } from "../../contexts/authContext";
+import { AuthContext } from "../../contexts/authContext";
 import LogoutAlter from "../../Common/Alert/CustomAlert";
 import './SideBar.css';
 
@@ -14,13 +14,13 @@ const SideBar = () => {
     let matchUser = useRouteMatch("/admin/quan-tri");
     let matchInfor = useRouteMatch("/admin/ho-so");
     let matchProduct = useRouteMatch("/admin/hang-hoa")
-    // const {
-    //     authState: {
-    //         user: {username}
-    //     },logoutUser
-    // } = useContext(AuthContext)
-    // const logout = () => logoutUser()
-    // const [open, setOpen] = useState(false);
+    const {
+        authState: {
+            user: {username}
+        },logoutUser
+    } = useContext(AuthContext)
+    const logout = () => logoutUser()
+    const [open, setOpen] = useState(false);
     
     return (
         <>
@@ -40,7 +40,7 @@ const SideBar = () => {
                         </div>
                     </div>
                     <div className="sidebar-menu">
-                        {/* <nav className="navbar navbar-expand-sm "> */}
+                        <nav className=" navbar-expand-sm ">
                             <ul className="menu">
                                 <li className="sidebar-title">Bảng điều khiển </li>
                                 <NavLink to="/admin" className="sidebar-item" activeClassName="active">
@@ -112,13 +112,13 @@ const SideBar = () => {
                                 >
                                         <RiLogoutBoxRLine className="icon-side" />
                                         <span>Đăng xuất</span>
-                                        {/* <span>{username}</span> */}
+                                        <span>{username}</span>
                                     </p>
                                 </li>
                             </ul>
-                        {/* </nav> */}
+                        </nav>
                     </div>
-                    {/* <button className="sidebar-toggler btn x"><i data-feather="x"></i></button> */}
+                    <button className="sidebar-toggler btn x"><i data-feather="x"></i></button>
                 </div>
             </div>
         </>

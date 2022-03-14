@@ -58,7 +58,7 @@ const UserAdmin = () => {
     },[])
     const getAllUser = async () => {
         const res = await AdminApi.getAdmin()
-        // console.log(res?.data?.admins);
+        console.log(res?.data?.admins, 8766788);
         setAllUser(res?.data?.admins);
         const ExportAdmin = res?.data?.admins.map((e, index) => {
             return {
@@ -81,7 +81,7 @@ const UserAdmin = () => {
     
     const getUsersId = async (userId) => {
         setLgShow(true);
-        // console.log(userId,1212)
+        console.log(userId,1212)
         const res = await AdminApi.getById(userId)
         setDetail(res?.data?.admins);
     }
@@ -194,7 +194,7 @@ const UserAdmin = () => {
                                                         <td>{user?.fullname}</td>
                                                         <td>{user?.phone }</td>
                                                         <td>
-                                                            <button className="btn btn-primary" onClick={() => { getUsersId(user?._id) }}>Xem chi tiết</button>
+                                                            <button className="btn btn-primary" onClick={() => { getUsersId( user?._id) }}>Xem chi tiết</button>
                                                             {/* <DetailAdmin
                                                                 onClick={() => { getUsersId(user?._id) }}
                                                                 data={detail} display={lgShow} setDisplay={setLgShow}
